@@ -1,8 +1,8 @@
 <nav>
   <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About me</a></li>
-    <li><a href="/posts">Posts</a></li>
-    <li><a href="/contact">Contact</a></li>
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
   </ul>
 </nav>

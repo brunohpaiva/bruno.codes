@@ -8,6 +8,9 @@ body {
   padding: 0;
   height: 100%;
   background-color: var(--body-background-color);
+
+  /* TODO */
+  font-family: "Arial";
 }
 
 div.wrapper {
@@ -20,6 +23,14 @@ div.sidebar {
   width: 350px;
   padding: 8px;
   border-right: 1px solid black;
+}
+
+div.sidebar nav ul {
+  list-style: none;
+}
+
+div.sidebar nav ul li a {
+  text-decoration: none;
 }
 
 main {
