@@ -1,0 +1,8 @@
+{
+  "name": "bruno.codes",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-go-template": "^0.0.13"
+  }
+}

@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <section>
+    {{ range .Paginator.Pages }}
+      <article>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        by
+        {{ .Params.author }}
+        {{ time.Format ":date_long" .Date }}
+        <li>
+          {{ range (.GetTerms "tags") }}
+            <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+          {{ end }}
+        </li>
+        {{ .Summary }}
+      </article>
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+  </section>
+{{ end }}

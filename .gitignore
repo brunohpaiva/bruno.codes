@@ -1,0 +1,4 @@
+node_modules/
+public/
+hugo
+.hugo_build.lock

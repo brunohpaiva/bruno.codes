@@ -1,0 +1,13 @@
+<ul>
+  {{ with .Site.Params.social }}
+    {{ with .email }}
+      <li><a href="mailto:{{ . }}">{{ . }}</a></li>
+    {{ end }}
+    {{ with .github }}
+      <li><a href="https://github.com/{{ . }}">{{ . }}</a></li>
+    {{ end }}
+    {{ with .twitter }}
+      <li><a href="https://twitter.com/{{ . }}">@{{ . }}</a></li>
+    {{ end }}
+  {{ end }}
+</ul>

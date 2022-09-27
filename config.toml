@@ -1,0 +1,8 @@
+baseURL = "https://bruno.codes/"
+languageCode = "en-us"
+title = "Bruno Henrique Paiva"
+
+[params.social]
+email = "me@bruno.codes"
+github = "brunohpaiva"
+twitter = "brnxz"

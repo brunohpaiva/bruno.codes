@@ -1,0 +1,29 @@
+:root {
+  --body-background-color: #f9f9f9;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--body-background-color);
+}
+
+div.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+div.sidebar {
+  width: 350px;
+  padding: 8px;
+  border-right: 1px solid black;
+}
+
+main {
+  flex: 1;
+  padding: 8px;
+  height: 100%;
+}
