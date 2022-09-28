@@ -1,4 +1,3 @@
-+++
-+++
+# [Bruno Henrique Paiva]({{< relref "about" >}}) {#bruno-henrique-paiva}
 
-# Home
+Currently living in Brazil, Bruno is a [Developer]({{< relref "work" >}})
