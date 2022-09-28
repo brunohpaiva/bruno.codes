@@ -11,15 +11,17 @@
     <link rel="stylesheet" href="/css/index.css" />
   </head>
   <body>
+    <a href="#main">Go to content</a>
+
     <div class="wrapper">
-      {{ partial "sidebar.html" . }}
+      {{ partial "header.html" . }}
 
 
       <main>
-        {{ block "main" . }}{{ end }}
-
-        {{ partial "footer.html" . }}
+        <div class="container">{{ block "main" . }}{{ end }}</div>
       </main>
+
+      {{ partial "footer.html" . }}
     </div>
   </body>
 </html>
