@@ -1,18 +1,18 @@
 <ul>
   {{ with .Site.Params.social }}
     {{ with .email }}
-      <li><a href="mailto:{{ . }}">{{ . }}</a></li>
+      <li><a href="mailto:{{ . }}" title="Email">{{ . }}</a></li>
     {{ end }}
     {{ with .github }}
       <li>
-        <a href="https://github.com/{{ . }}">
+        <a href="https://github.com/{{ . }}" title="GitHub">
           {{ partial "svgs/github.svg" (dict "width" "32" "height" "32") }}
         </a>
       </li>
     {{ end }}
     {{ with .twitter }}
       <li>
-        <a href="https://twitter.com/{{ . }}">
+        <a href="https://twitter.com/{{ . }}" title="Twitter">
           {{ partial "svgs/twitter.svg" (dict "width" "32" "height" "32") }}
         </a>
       </li>
