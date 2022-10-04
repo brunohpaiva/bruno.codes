@@ -1,0 +1,11 @@
+<div id="recent-posts">
+  <h2>Recent posts</h2>
+
+  <ul>
+    {{ range (where .Site.RegularPages "Type" "posts" | first 5) }}
+      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+
+  <a href="/posts">See all</a>
+</div>
