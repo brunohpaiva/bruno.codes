@@ -5,20 +5,18 @@
 
 {{ define "main" }}
   <section>
+    <h2>{{ .Title }}</h2>
+
     {{ range .Paginator.Pages }}
       <article>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        by
-        {{ .Params.author }}
-        {{ time.Format ":date_long" .Date }}
-        {{ with (.GetTerms "tags") }}
-          <li>
-            {{ range . }}
-              <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-            {{ end }}
-          </li>
-        {{ end }}
-        <p>{{ .Summary }}</p>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <span>by {{ .Params.author }}</span>
+        <span>
+          at
+          <time datetime="{{ time.Format "2006-01-02 15:04:05-0700" .Date }}">
+            {{ time.Format ":date_long" .Date }}
+          </time>
+        </span>
       </article>
     {{ end }}
     {{ template "_internal/pagination.html" . }}
