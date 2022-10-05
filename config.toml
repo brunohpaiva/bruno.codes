@@ -1,5 +1,4 @@
 baseURL = "https://bruno.codes/"
-languageCode = "en-us"
 title = "Bruno Henrique Paiva"
 
 [params.social]
@@ -8,32 +7,54 @@ github = "brunohpaiva"
 twitter = "brnxz"
 linkedin = "brunohpaiva"
 
+defaultContentLanguage = "en"
+
 [languages.en]
+languageName = "English"
+languageCode = "en"
 weight = 1
 
-[languages.pt-br]
-weight = 2
-
-[[menu.main]]
-identifier = "home"
-name = "Home"
+[[languages.en.menu.main]]
 url = "/"
+name = "Home"
 weight = 1
 
-[[menu.main]]
-identifier = "about"
-name = "About"
+[[languages.en.menu.main]]
 url = "/about"
+name = "About"
 weight = 2
 
-[[menu.main]]
-identifier = "posts"
-name = "Posts"
+[[languages.en.menu.main]]
 url = "/posts"
+name = "Posts"
 weight = 3
 
-[[menu.main]]
-identifier = "contact"
-name = "Contact"
+[[languages.en.menu.main]]
 url = "/contact"
+name = "Contact"
+weight = 4
+
+[languages.pt-br]
+languageName = "Português (Brasil)"
+languageCode = "pt-BR"
+weight = 2
+
+[[languages.pt-br.menu.main]]
+url = "/"
+name = "Início"
+weight = 1
+
+[[languages.pt-br.menu.main]]
+url = "/sobre"
+name = "Sobre"
+weight = 2
+
+[[languages.pt-br.menu.main]]
+url = "/posts"
+name = "Posts"
+weight = 3
+
+[[languages.pt-br.menu.main]]
+url = "/contato"
+name = "Contato"
 weight = 4
