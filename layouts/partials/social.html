@@ -10,6 +10,13 @@
         </a>
       </li>
     {{ end }}
+    {{ with .linkedin }}
+      <li>
+        <a href="https://linkedin.com/in/{{ . }}" title="GitHub">
+          {{ partial "svgs/linkedin.svg" (dict "width" "32" "height" "32") }}
+        </a>
+      </li>
+    {{ end }}
     {{ with .twitter }}
       <li>
         <a href="https://twitter.com/{{ . }}" title="Twitter">
