@@ -10,7 +10,7 @@
     {{ range .Paginator.Pages }}
       <article>
         <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-        <span>by {{ .Params.author }}</span>
+        <span>{{ i18n "by-author" }} {{ .Params.author }}</span>
         <span>
           at
           <time datetime="{{ time.Format "2006-01-02 15:04:05-0700" .Date }}">

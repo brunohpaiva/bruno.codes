@@ -1,7 +1,7 @@
 # [Bruno Henrique Paiva]({{< relref "about" >}}) {#bruno-henrique-paiva}
 
 Atualmente morando no Brasil, [Bruno]({{< relref "about" >}}) é um
-[Developer]({{< relref "work" >}}) com +7 anos de experiência construindo
+[Desenvolvedor]({{< relref "work" >}}) com +7 anos de experiência construindo
 software para empresas.
 
 Eu trabalho principalmente em projetos privados para

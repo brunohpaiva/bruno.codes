@@ -1,5 +1,5 @@
 <div id="recent-posts">
-  <h2>Recent posts</h2>
+  <h2>{{ i18n "recent-posts" }}</h2>
 
   <ul>
     {{ range (where .Site.RegularPages "Type" "posts" | first 5) }}
@@ -7,5 +7,5 @@
     {{ end }}
   </ul>
 
-  <a href="{{ "posts" | relLangURL }}">See all</a>
+  <a href="{{ "posts" | relLangURL }}">{{ i18n "see-all-posts" }}</a>
 </div>

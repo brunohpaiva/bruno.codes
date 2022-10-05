@@ -1,5 +1,5 @@
 +++
-title = "Work"
+title = "Trabalho"
 slug = "trabalho"
 +++
 
