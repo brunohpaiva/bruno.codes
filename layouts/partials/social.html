@@ -1,25 +1,32 @@
 <ul>
   {{ with .Site.Params.social }}
     {{ with .email }}
-      <li><a href="mailto:{{ . }}" title="Email">{{ . }}</a></li>
+      <li><a rel="me" href="mailto:{{ . }}" title="Email">{{ . }}</a></li>
     {{ end }}
     {{ with .github }}
       <li>
-        <a href="https://github.com/{{ . }}" title="GitHub">
+        <a rel="me" href="https://github.com/{{ . }}" title="GitHub">
           {{ partial "svgs/github.svg" (dict "width" "32" "height" "32") }}
         </a>
       </li>
     {{ end }}
     {{ with .linkedin }}
       <li>
-        <a href="https://linkedin.com/in/{{ . }}" title="GitHub">
+        <a rel="me" href="https://linkedin.com/in/{{ . }}" title="GitHub">
           {{ partial "svgs/linkedin.svg" (dict "width" "32" "height" "32") }}
+        </a>
+      </li>
+    {{ end }}
+    {{ with .mastodon }}
+      <li>
+        <a rel="me" href="{{ . }}" title="Mastodon">
+          {{ partial "svgs/mastodon.svg" (dict "width" "32" "height" "32") }}
         </a>
       </li>
     {{ end }}
     {{ with .twitter }}
       <li>
-        <a href="https://twitter.com/{{ . }}" title="Twitter">
+        <a rel="me" href="https://twitter.com/{{ . }}" title="Twitter">
           {{ partial "svgs/twitter.svg" (dict "width" "32" "height" "32") }}
         </a>
       </li>
